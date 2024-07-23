@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chaman Kumar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+/* vijay css */
+.mr35 {
+	margin-right: 2.5rem;
+}
+.mr50 {
+	margin-right: 3.5rem;
+}
+
+.mr5 {
+	margin-right: 5rem;
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Chaman Kumar</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+			  <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+			  <li class="nav-item"><a href="#Experience-section" class="nav-link"><span>Experience</span></a></li>
+			  <li class="nav-item"><a href="#Education-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Chaman Kumar</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Technical Support ',
+						'CoLaptmputer | Laptop repair '
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and Freelanceradd it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Technical Support Engineer </h2>
+						<a href="https://www.linkedin.com/in/chaman-kumar-5131a5154/" class="btn btn-primary py-3 px-4">Linkedin</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <ul class="about-info">
+										<li><span class="title-s">Name: </span> <span>Chaman Kumar</span></li>
+										<li><span class="title-s">Job Role: </span> <span>Technical Support Engineer</span></li>
+										<li><span class="title-s">Experience: </span> <span>7 Years 6 Months</span></li>
+										<li class="title-s"><span>Education:</span> <span>BCA</span></li>
+										<li class="title-s"><span>Language:</span> <span>English, Hindi</span></li>
+										<li><span class="title-s">Address: </span> <span>Delhi NCR, India</span></li>
+										<li ><span class="title-s">Interest:</span> <span>Tech Enthusiast, Internet suffering, Traveling, Listening Music</span></li>
+										</ul>
+									</div>
+								  </div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								<p>With over 7 years of experience in technical support, I aim to use my skills to help customers solve their technical problems quickly 
+									and effectively. I am looking for an opportunity to join a dynamic team where I can continue to grow professionally, assist in improving
+									 customer satisfaction, and contribute to the success of the company.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-start pl-3">
+				<h3>Skills</h3>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col">
+					<div class="resume-wrap ftco-animate">
+						<div>
+						<ul class="about-info mt-4 px-md-0 px-2">
+							<li class="d-flex"><span class="w-25 mw-150">Operating Systems:</span> <span>Windows XP, XP2, XP3, Window 7, Window 8, Window 8.1, Window 10 etc.</span></li>
+							<li class="d-flex"><span class="w-25 mw-150">Chat/RDP Support:</span> <span>Mange Engine, any desk, TeamViewer, MS tool, Tight VNC, ZOHO
+								Assist, MS team and skype.</span></li>
+							<li class="d-flex"><span class="w-25 mw-150">Designing Software:</span> <span>Photoshop, CS6 Adobe Photoshop, Corel draw,
+									PageMaker, UG-NX, Solid work, Del cam, AutoCAD, coral draw, page maker,
+									Microsoft Nav 2016, sebar, Amadeus, Gallio, Smart capita, HRMS installation and
+									configuration.</span></li>
+							<li class="d-flex"><span class="w-25 mw-150">Tools/Technologies</span><span>Office 2007, 2010, 2016, O365 etc. SAP or SAP HANA, BEX
+								Analyzer, java, oracle, dot.net Tally and tally ERP 9, IBM Lotus ,MS word, Excel, Power Point, Access, Outlook, Adobe reader.</span></li>
+							<li class="d-flex"><span class="w-25 mw-150">Extra Skill:</span><span>Bit locker, internet/LAN and WAN
+									Connectivity issues, Z scalar, Citrix, XenApp, Net-scaler, Array and Barracuda Installing and
+									Configuring VPN client software, Tata tale cloud phone, Zioper, Gplex ,my operator Soft-phone, EPBX-phone, IPBX
+									and Soft-Phone installation and configuration.</span></li>
+							
+						</ul>
+					</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>7 years of experience in IT support, specializing in hardware, software, and network troubleshooting.
+				Proven ability to provide technical assistance, system administration, and customer support.</p>
+          </div>
+        </div>
+		<div class="row">
+			<h1 class="big-4" id="Experience-section">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<h2 class="date">Mankind pharma</h2>
+    					<h5>a Executive | Information & Services</h5>
+    					<p class="mt-4">Duration: 03/2024-present</p>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<h2 class="date">Riya Travel Expert</h2>
+    					<h5> Technical Support Officer (E1)</h5>
+    					<p class="mt-4">Duration: 06/2021-03/2024</p>
+    				</div>
+    			</div>
+				
+    		</div>
+			<div class="row">
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<h2 class="date">AR Infratech</h2>
+    					<h5>Head Desktop support Engineer (L2)(worked project TATA STEEL)</h5>
+    					<p class="mt-4">Duration: 02/2018-03/2021</p>
+    				</div>
+    			</div>
+			</div>
+		<br>
+		<br>
+		<div class="row">
+			<h1 class="big-4">Roles and Responsibilities</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row d-flex justify-content-center">
+				<div class="col-md-8">
+					<div class="resume-wrap ftco-animate">
+						<p class="mt-4">7 years of experience in IT support, specializing in hardware, software, and network troubleshooting.
+							Proven ability to provide technical assistance, system administration, and customer support. 
+							<ul>
+								<li><b>Installs, updates, and troubleshoots:</b> computer drivers, application software, printers drivers.</li>
+								<li><b>Assembles and disassembles:</b> desktops, laptops, and replaces parts like hard drives, RAM, screens, Motherboard, wires and cable, network and Bio Metrics machine etc etc.</li>
+								<li><b>Team player:</b> works with colleagues inside and outside IT.</li>
+								<li><b>Bit locker:</b> Deploying Laptop and Enabling bit locker key for the drives & resolving Bit locker, Bit locker Encryption or full disk Encryption Issues.</li>
+								<li><b>Fixes computer problems:</b> resolves issues with Windows applications, desktops, laptops, servers, and other IT equipment.</li>
+								<li><b>Secures data:</b> ensures data, network access, and backups are secure.</li>
+								<li><b>Manages user accounts:</b> adds users to groups for Wi-Fi access and resolves login issues.</li>
+								<li><b>Configures software:</b> sets up email clients (Outlook, Lotus Notes), cloud storage (OneDrive, Google Drive), and VPN software.</li>
+								<li><b>Supports various software:</b> installs and configures MS Office, SAP applications, Adobe products (Photoshop, Acrobat), and phone systems.</li>
+								<li><b>Network and printer setup:</b> configures network printers and data transfer between devices.</li>
+								<li><b>Basic computer skills:</b> understands Word, Excel, PowerPoint, and internet troubleshooting.</li>
+								<li><b>Remote desktop support:</b> uses tools like TeamViewer or AnyDesk to assist users remotely.</li>
+								<li><b>Communication:</b> provides chat and voice support through tools like MS Teams and Skype.</li>
+								<li><b>Ticketing system:</b> uses a system to manage service requests.</li>
+								<li>Resolving Domain login and Account lockout Issues Adding user WLAN group in Active
+									directory for Wi-Fi access, Basic troubleshooting knowledge for internet/LAN and WAN
+									Connectivity issues.</li>
+								<li>Perform installation/ troubleshooting / configuring of MS Outlook Client, IBM Lotus, one
+									drive, Google drive, one drive, Gmail. </li>
+								<li>Applications software MS Office 2007, 2010, 2016, O365 etc. SAP or SAP HANA, BEX
+									Analyzer, java, oracle, dot.net Tally and tally ERP 9, IBM Lotus, Skype for business,
+									MS team, , Adobe Photoshop 7, CS3, CS6 installation and configuration. </li>
+								<li>Z scalar, Citrix, XenApp, Net-scaler, Array and Barracuda Installing and
+									Configuring VPN client software. </li>
+								<li>ata tale cloud phone, Zioper, Gplex ,my operator Soft-phone, EPBX-phone, IPBX
+								and Soft-Phone installation and configuration.</li>
+								<li>Adobe reader, Acrobat reader DC pro, Abode merger, Adobe rename, Adobe
+									editor, Adobe merger, Adobe Splitter, Cute PDF, PDF viewer installation and
+									Configuration. </li>
+								<li>Basic knowledge MS word, Excel, Power Point, Access, Outlook.</li>
+								<li>Basic knowledge Designing Application Photoshop, CS6 Adobe Photoshop, Corel draw,
+									PageMaker</li>
+								<li>Designing Software UG-NX, Solid work, Del cam, AutoCAD, coral draw, page maker,
+									Microsoft Nav 2016, sebar, Amadeus, Gallio, Smart capita, HRMS installation and
+									configuration</li>
+								<li>RDP support by Mange Engine, any desk, TeamViewer, MS tool, Tight VNC, ZOHO
+									Assist.</li>
+								<li>web developing, Html, DHtml and c/c++, Dreamviwer basic Language knowledge</li>
+								</ul>
+						</p>
+					</div>
+
+				</div>
+		</div>
+
+		<div class="row" id="Education-section">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2022</span>
+    					<h2>Master of Business Administration</h2>
+    					<span class="position">Subharti University</span>
+    					<p class="mt-4">Grade: First class</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2020</span>
+    					<h2>Bachelor of Computer Applications</h2>
+    					<span class="position">M.D University Rohtakchnic</span>
+    					<p class="mt-4">Grade: First class</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="chaman CV.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Dehli NCR, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+918860669954">+ 91 8860669954</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:chamank06@gmail.com">chamank06@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/chaman-kumar-5131a5154/"><span class="icon-linkedin"></span></a></li> 
+					  <li class="ftco-animate"><a href="https://wa.me/+918860669954"><span class="icon-whatsapp"></span></a></li> 
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
